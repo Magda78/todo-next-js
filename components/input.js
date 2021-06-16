@@ -18,10 +18,10 @@ function Input() {
 	}
 
 	return (
-		<div className='p-10 flex justify-center'>
-			<form>
-				<input onChange={inputHandler} value={Input} ref={input} className='border-b-2  border-green-400 border-b-green-600 mr-3 p-2 focus:outline-none' type="text" />
-				<button className="text-sm p-2 border-2 border-purple-200" type="submit" onClick={submitHandler}>Submit</button>
+		<div className="p-5 flex justify-end">
+			<form className="w-3/4 mr-0 flex justify-end">
+				<input onChange={inputHandler} value={Input} ref={input} className="border-b-2 border-grey-200 mr-3 p-2 focus:outline-none w-3/4 focus:border-green-500 text-sm" type="text" />
+				<button className="text-sm p-2 border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white" type="submit" onClick={submitHandler}>Submit</button>
 			</form>
 		</div>
 	);
